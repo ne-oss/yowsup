@@ -27,26 +27,26 @@ setup(
     tests_require=[],
     install_requires = deps,
     scripts = ['yowsup-cli'],
-    #cmdclass={'test': PyTest},
+    cmdclass={'test': PyTest},
     author_email='tare2.galal@gmail.com',
     description='The WhatsApp lib',
-    #long_description=long_description,
+    long_description=long_description,
     packages= find_packages(),
     include_package_data=True,
     data_files = [('yowsup/common', ['yowsup/common/mime.types'])],
     platforms='any',
-    #test_suite='',
+    test_suite='',
     classifiers = [
         'Programming Language :: Python',
         'Development Status :: 4 - Beta',
         'Natural Language :: English',
-        #'Environment :: Web Environment',
+        'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
         'Operating System :: OS Independent',
         'Topic :: Software Development :: Libraries :: Python Modules'
         ],
-    #extras_require={
-    #    'testing': ['pytest'],
-    #}
+    extras_require={
+        'testing': ['pytest'],
+    }
 )
